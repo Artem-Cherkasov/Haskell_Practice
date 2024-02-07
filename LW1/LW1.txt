@@ -1,0 +1,51 @@
+1.
+  let a = (( 1, 'a'), "abc")
+  snd(fst(a))
+2.
+  2.1
+    let list = ['a', 'b', 'c']
+    head(tail(a))
+
+  2.2
+    let list = [['a', 'b'], ['c','d']]
+    tail(head(list))
+
+  2.3
+    let list = [['a', 'c', 'd'], ['a','b']]
+    tail(head(tail(list)))
+  
+  2.4
+    let list = [['a','d'], ['b', 'c']]
+    head(head(tail(list)))
+3.
+  3.1
+    filter odd [1..40]
+
+  3.2
+    filter (\x -> x `mod` 2 /= 0) [1..40]
+
+  3.3
+    [1,3..40]
+4.
+  triangle_Ferma n = n*(n+1)/2
+  map triangle_Ferma [1..50]
+5.
+  pyramid_Ferma n = (2*n^3+3*n^2+n)/6
+  map pyramid_Ferma [1..50] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
