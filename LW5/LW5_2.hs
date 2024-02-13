@@ -15,8 +15,9 @@ main = do
 
   content <- readFile f1
 
-  replaceChar <- prompt "Enter replacer character: "
+  [replaceChar] <- prompt "Enter replacer character: "
+  
 
-  let replaced = map (\c -> if isPunctuation c then head replaceChar else c) content
+  let replaced = map (\c -> if isPunctuation c then replaceChar else c) content
 
   writeFile f2 replaced
